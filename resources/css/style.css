@@ -1,0 +1,284 @@
+html {
+  font-size: 18px;
+  height: 1000px;
+}
+
+
+/* Header*/
+header {
+  background: black;
+
+}
+
+.container-fluid {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  height: 3rem;
+  padding: .66rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.container img {
+  height: 1.5rem;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  padding: .5rem 0 0 .5rem;
+}
+
+.container span {
+  color: white;
+  margin: 16px 0 20px 0;
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+/* Header*/
+
+/*Main Background Image */
+
+.main-img {
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.container2 {
+  width: 960px;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  z-index: 10;
+}
+
+.container-column {
+  width: 25rem;
+  margin-top: 9rem;
+  height: 12rem;
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.container-column h1 {
+  font-size: 1rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 2rem 0 0 3rem;
+  color: white;
+  width: 25rem;
+  text-transform: uppercase;
+}
+
+.container-column h2 {
+  font-size: 2rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding: 0 0 .25rem 3rem;
+  color: white;
+  width: 25rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 400px){
+  .container-column {
+    height: 5rem;
+    margin: 18rem 0 0 0;
+  }
+
+  .container-column h1 {
+    width: 25rem;
+    margin-top: 0;
+    padding: 1.5rem 0 0 2rem;
+    height: 1.75rem;
+    font-size: 1rem;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .container-column h2 {
+    width: 25rem;
+    margin-top: 0;
+    padding: .25rem 0 1rem 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+}
+/*Main Background Image */
+
+/* Navigation bar */
+
+.firebrick {
+  background-color: firebrick;
+}
+
+.container ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.container li {
+  color: white;
+  padding-top: .5rem;
+  height: 1.2rem;
+  width: 10rem;
+  font-family: Helvetica;
+  font-size: 1.15rem;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.container ul li a:hover {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  background: #ffffff;
+  padding: 10px;
+  color: black;
+  margin: -10px;
+  border-radius: 20px;
+}
+
+.container ul .menu {
+  z-index: -5;
+}
+
+@media only screen and (max-width: 958px){
+
+.container ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.container ul li {
+  width: 100%;
+  padding-top: .75rem;
+  font-size: 1.5rem;
+}
+
+.container ul .menu {
+  z-index: 10;
+  color: white;
+}
+
+.container ul .nav-lg {
+    display: none !important;
+  }
+
+}
+
+@media only screen and (min-width: 958px){
+
+ul .menu {
+  color: firebrick;
+}
+
+}
+
+/* second container */
+.container-fluid-2 {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.container-fluid-2 .container-3-main {
+  width: 960px;
+  height: auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.container-fluid-2 .container-4-product {
+ height: auto;
+ margin: 1rem;
+ border: 4px solid black;
+ background-color: white;
+ width: 30%;
+}
+
+.container-fluid-2 .container-4-product img {
+  height: 8rem;
+  padding: 4rem 0;
+  width: auto;
+  background-color: white;
+}
+
+.container-fluid-2 .container-4-product p {
+  background-color: black;
+  height: auto;
+  padding: .5rem 0;
+  color: white;
+  font-size: 1.2rem;
+
+}
+
+.container-fluid-2 .container-5 {
+  width: 35%;
+  height: auto;
+  background-color: black;
+}
+
+.container-fluid-2 .container-5 p {
+  padding: 2rem 1rem;
+  background-color: white;
+}
+
+@media only screen and (max-width: 400px){
+  div .container-4-product .watch {
+    display: none;
+  }
+
+}
+/*html {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
